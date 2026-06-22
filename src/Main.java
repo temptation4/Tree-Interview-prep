@@ -176,6 +176,49 @@ return res;
         }
         return validate(root.left,min,root.val) && validate(root.right,root.val,max);
     }
+/*Symmetric Tree
+    https://leetcode.com/problems/symmetric-tree/description/?utm_source=chatgpt.com
+    Input: root = [1,2,2,3,4,4,3]
+    Output: true */
 
+    public boolean isSymmetric(TreeNode root) {
+        if(root == null) {
+            return false;
+        }
+      return iSMirror(root.left,root.right);
+    }
+
+    private boolean iSMirror(TreeNode n1,TreeNode n2) {
+        if(n1 == null && n2 == null) {
+            return true;
+        }
+        if(n1 == null || n2 == null) {
+            return false;
+        }
+        if(n1.val!= n2.val) {
+            return false;
+        }
+        return iSMirror(n1.left,n2.right) && iSMirror(n1.right,n2.left);
+    }
+
+    /*Path Sum
+    https://leetcode.com/problems/path-sum/description/?utm_source=chatgpt.com
+    Input: root = [5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum = 22
+    Output: true
+    Explanation: The root-to-leaf path with the target sum is shown. */
+
+    public boolean hasPathSum(TreeNode root, int targetSum) {
+
+        if(root == null) {
+            return false;
+        }
+        targetSum = targetSum - root.val;
+        if(root.left == null && root.right == null) {
+            return targetSum == root.val;
+        }
+
+        return hasPathSum(root.left,targetSum) || hasPathSum(root.right,targetSum);
+
+    }
 
 }

@@ -134,8 +134,7 @@ Build strong understanding of:
 
 ---
 
-### Author
-
+## 👨‍💻 Author
 Neelu Sahai
 
 Java Tech Lead | Backend Developer

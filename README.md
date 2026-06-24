@@ -6,7 +6,7 @@ Java solutions for Binary Tree and Binary Search Tree interview questions.
 
 This repository contains tree-related Data Structures & Algorithms problems solved in Java for interview preparation.
 
-Topics covered:
+### Topics Covered
 
 * Binary Tree Traversals
 * Binary Search Trees (BST)
@@ -14,85 +14,83 @@ Topics covered:
 * Tree Construction
 * Lowest Common Ancestor (LCA)
 * Path Problems
+* Tree Serialization & Deserialization
 * Advanced Tree Problems
 
 ---
 
-## Repository Structure
+## Completed Problems ✅
 
-```text
-Tree-Interview-prep/
-│
-├── 01-Traversals/
-├── 02-BST/
-├── 03-DFS/
-├── 04-BFS/
-├── 05-LCA/
-├── 06-Construction/
-├── 07-Advanced/
-└── common/
-```
+### Traversals
 
----
+| Problem                           | LeetCode | Status |
+| --------------------------------- | -------- | ------ |
+| Binary Tree Inorder Traversal     | 94       | ✅      |
+| Binary Tree Level Order Traversal | 102      | ✅      |
 
-## Traversals
+### DFS
 
-| Problem               | LeetCode |
-| --------------------- | -------- |
-| Inorder Traversal     | 94       |
-| Preorder Traversal    | 144      |
-| Postorder Traversal   | 145      |
-| Level Order Traversal | 102      |
+| Problem                      | LeetCode | Status |
+| ---------------------------- | -------- | ------ |
+| Maximum Depth of Binary Tree | 104      | ✅      |
+| Diameter of Binary Tree      | 543      | ✅      |
+| Path Sum                     | 112      | ✅      |
 
----
+### BST
 
-## Binary Search Tree (BST)
+| Problem                     | LeetCode | Status |
+| --------------------------- | -------- | ------ |
+| Validate Binary Search Tree | 98       | ✅      |
 
-| Problem                     | LeetCode |
-| --------------------------- | -------- |
-| Search in BST               | 700      |
-| Insert into BST             | 701      |
-| Validate BST                | 98       |
-| Kth Smallest Element in BST | 230      |
+### LCA
 
----
+| Problem                               | LeetCode | Status |
+| ------------------------------------- | -------- | ------ |
+| Lowest Common Ancestor of Binary Tree | 236      | ✅      |
 
-## DFS Problems
+### Tree Structure
 
-| Problem                      | LeetCode |
-| ---------------------------- | -------- |
-| Maximum Depth of Binary Tree | 104      |
-| Path Sum                     | 112      |
-| Diameter of Binary Tree      | 543      |
+| Problem        | LeetCode | Status |
+| -------------- | -------- | ------ |
+| Symmetric Tree | 101      | ✅      |
+
+### Advanced
+
+| Problem                               | LeetCode | Status |
+| ------------------------------------- | -------- | ------ |
+| Serialize and Deserialize Binary Tree | 297      | ✅      |
 
 ---
 
-## BFS Problems
+## Upcoming Problems 🚀
 
-| Problem                           | LeetCode |
-| --------------------------------- | -------- |
-| Binary Tree Level Order Traversal | 102      |
-| Zigzag Level Order Traversal      | 103      |
-| Right Side View                   | 199      |
+### Traversals
 
----
+* Binary Tree Preorder Traversal (LC 144)
+* Binary Tree Postorder Traversal (LC 145)
 
-## Lowest Common Ancestor (LCA)
+### BST
 
-| Problem            | LeetCode |
-| ------------------ | -------- |
-| LCA of Binary Tree | 236      |
-| LCA of BST         | 235      |
+* Search in BST (LC 700)
+* Insert into BST (LC 701)
+* Kth Smallest Element in BST (LC 230)
+* Lowest Common Ancestor of BST (LC 235)
 
----
+### DFS/BFS
 
-## Advanced Problems
+* Same Tree (LC 100)
+* Invert Binary Tree (LC 226)
+* Zigzag Level Order Traversal (LC 103)
+* Right Side View (LC 199)
+* Path Sum II (LC 113)
+* Path Sum III (LC 437)
+* Binary Tree Maximum Path Sum (LC 124)
 
-| Problem                               | LeetCode |
-| ------------------------------------- | -------- |
-| Serialize and Deserialize Binary Tree | 297      |
-| Vertical Order Traversal              | 987      |
-| Boundary Traversal                    | Custom   |
+### Advanced
+
+* Vertical Order Traversal (LC 987)
+* Boundary Traversal
+* Recover Binary Search Tree (LC 99)
 
 ---
 
@@ -106,7 +104,7 @@ Tree-Interview-prep/
 | Preorder  | O(n) | O(h)  |
 | Postorder | O(n) | O(h)  |
 
-### BFS Traversal
+### BFS Traversals
 
 | Traversal   | Time | Space |
 | ----------- | ---- | ----- |
@@ -114,10 +112,28 @@ Tree-Interview-prep/
 
 ---
 
-## Language
+## Repository Structure
+
+```text
+Tree-Interview-prep/
+│
+├── Traversals/
+├── BST/
+├── DFS/
+├── BFS/
+├── LCA/
+├── Construction/
+├── Advanced/
+└── common/
+```
+
+---
+
+## Tech Stack
 
 * Java 17+
 * IntelliJ IDEA
+* Git & GitHub
 
 ---
 
@@ -126,13 +142,16 @@ Tree-Interview-prep/
 Build strong understanding of:
 
 * Recursion
-* Tree Traversals
-* BST Operations
+* Binary Trees
+* Binary Search Trees
 * DFS
 * BFS
+* Tree Traversals
 * Interview Patterns
 
 ---
+
+
 
 ## 👨‍💻 Author
 Neelu Sahai

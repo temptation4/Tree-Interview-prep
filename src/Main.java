@@ -5,10 +5,10 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        Integer[] arr = {1, 2, 3, 4, 5};
+        Integer[] arr = {3,9,20,null,null,15,7};
         TreeNode root = buildTree(arr, 0);
         Main m = new Main();
-        int res = m.diameterOfBinaryTree(root);
+        int res = m.sumOfLeftLeaves(root);
         System.out.println(res);
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
@@ -28,7 +28,6 @@ public class Main {
         inorder(root,list);
         System.out.println(list);
        return list;
-
     }
 
     static void inorder(TreeNode root,List<Integer> list) {
@@ -216,8 +215,34 @@ return res;
         if(root.left == null && root.right == null) {
             return targetSum == root.val;
         }
-
         return hasPathSum(root.left,targetSum) || hasPathSum(root.right,targetSum);
+    }
+
+    /*Sum of Left Leaves
+    https://leetcode.com/problems/sum-of-left-leaves/description/?envType=problem-list-v2&envId=binary-tree
+    Input: root = [3,9,20,null,null,15,7]
+    Output: 24
+    Explanation: There are two left leaves in the binary tree, with values 9 and 15 respectively.*/
+
+    public int sumOfLeftLeaves(TreeNode root) {
+      return dfs(root,false);
+    }
+
+    public int dfs(TreeNode root,boolean found) {
+
+        if(root == null) {
+            return 0;
+        }
+
+        if(root.left == null && root.right == null && found) {
+            return root.val;
+        }
+
+        int left = dfs(root.left,true);
+
+        int right = dfs(root.right,false);
+
+        return root.val + left + right;
 
     }
 
